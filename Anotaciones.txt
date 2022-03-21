@@ -1,0 +1,3 @@
+Si hay problemas con las migraciones se deben borrar los archivos migrations (el __init__.py NO)
+de las apps que tienen importacion circular y luego correr python manage.py makemigrations (sin especificar app).
+Luego correr python manage.py migrate.

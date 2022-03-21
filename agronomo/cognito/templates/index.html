@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <nav class="border-b border-gray-300">
+        <div class="max-w-6xl mx-auto py-2 px-6 xl:px-0 flex items-center justify-between">
+            <div class="menu-left flex items-center space-x-6">
+                <ul class="flex items-center space-x-4">
+                    {% if status == 0 %}
+                    <li><a href="https://prueba-back.auth.us-east-1.amazoncognito.com/login?response_type=code&client_id=6mlig87u7unv6ij0s6rijd9obj&redirect_uri=http://localhost:8000/">Sign-in/up</a></li>
+                    {% elif status == 1 %}
+                    <li><a href="https://prueba-back.auth.us-east-1.amazoncognito.com/logout?client_id=6mlig87u7unv6ij0s6rijd9obj&logout_uri=http://localhost:8000/sign-out">Sign-out</a></li>
+                    {% endif %}
+                </ul>
+            </div>
+        </div>
+    </nav>
+</body>
+</html>
